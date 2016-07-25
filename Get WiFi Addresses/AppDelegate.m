@@ -13,6 +13,7 @@ struct am_device* device;
 struct am_device_notification *notification;
 NSString *headerString = @"SerialNumber, WiFiAddress";
 NSString *completeString = @"";
+NSString *allDetails = @"";
 NSMutableDictionary *dictionary;
 
 void notification_callback(struct am_device_notification_callback_info *info, int cookie) {
@@ -78,6 +79,20 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
 
 - (NSString *)getDeviceValue:(NSString *)value {
 	return AMDeviceCopyValue(device, 0, value);
+}
+
+- (void)exportDeviceInfo:(id)sender {
+    NSString *allDetails = [deviceDetails stringValue];
+    
+    NSSavePanel *panel = [NSSavePanel savePanel];
+    
+    [panel beginWithCompletionHandler:^(NSInteger result){
+        if (result == NSFileHandlingPanelOKButton) {
+            NSString *fileName = [[panel URL] path];
+            [allDetails writeToFile:fileName atomically:NO encoding:NSStringEncodingConversionAllowLossy error:nil];
+        }
+    }];
+    allDetails = @"";
 }
 
 @end

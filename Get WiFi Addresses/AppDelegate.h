@@ -17,6 +17,7 @@
 - (void) populateDeviceInfo;
 - (void) dePopulateDeviceInfo;
 - (NSString *)getDeviceValue:(NSString *)value;
+- (IBAction)exportDeviceInfo:(id)sender;
 
 @property (assign) IBOutlet NSWindow *window;
 
