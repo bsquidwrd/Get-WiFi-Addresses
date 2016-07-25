@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DCB45F2E-AE6A-412B-8B9A-B1509C1DE6F9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Get WiFi Addresses</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E19723AA-9275-4BCE-8AC8-370F0ED6EC9D</key>
+		<string>https://github.com/bsquidwrd/Get-WiFi-Addresses.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Get WiFi Addresses.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E19723AA-9275-4BCE-8AC8-370F0ED6EC9D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bsquidwrd/Get-WiFi-Addresses.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E19723AA-9275-4BCE-8AC8-370F0ED6EC9D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E19723AA-9275-4BCE-8AC8-370F0ED6EC9D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Get-WiFi-Addresses</string>
+		</dict>
+	</array>
+</dict>
+</plist>
