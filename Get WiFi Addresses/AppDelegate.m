@@ -68,10 +68,15 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
     
     completeString = [NSString stringWithFormat:@"%@\n", headerString];
     
+    int newDeviceCountInt = 0;
     for (NSString* key in [dictionary allKeys]) {
         NSLog(@"key: %@, value: %@", key, [dictionary objectForKey:key]);
+        newDeviceCountInt++;
         completeString = [NSString stringWithFormat:@"%@%@,%@\n", completeString, key, [dictionary objectForKey:key]];
     }
+    
+    NSString *newDeviceCountStr = [NSString stringWithFormat:@"Connected Devices: %d", newDeviceCountInt];
+    [deviceCount setStringValue:newDeviceCountStr];
     
     [deviceDetails setStringValue:completeString];
     [deviceDetails selectText:self];

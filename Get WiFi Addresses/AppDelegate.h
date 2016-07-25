@@ -12,6 +12,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     //NSWindow *window;
     IBOutlet NSTextField *deviceDetails;
+    IBOutlet NSTextField *deviceCount;
 }
 
 - (void) populateDeviceInfo;
