@@ -1,4 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/bsquidwrd/Get-WiFi-Addresses.png?label=ready&title=Ready)](https://waffle.io/bsquidwrd/Get-WiFi-Addresses)
 Get-WiFi-Addresses
 ==================
 
