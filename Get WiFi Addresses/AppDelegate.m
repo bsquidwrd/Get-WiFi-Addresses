@@ -11,7 +11,7 @@
 static AppDelegate *classPointer;
 struct am_device* device;
 struct am_device_notification *notification;
-NSString *headerString = @"SerialNumber, WiFiAddress";
+NSString *headerString = @"SerialNumber,WiFiAddress";
 NSString *completeString = @"";
 NSString *allDetails = @"";
 NSMutableDictionary *dictionary;
@@ -70,7 +70,7 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
     
     for (NSString* key in [dictionary allKeys]) {
         NSLog(@"key: %@, value: %@", key, [dictionary objectForKey:key]);
-        completeString = [NSString stringWithFormat:@"%@%@, %@\n", completeString, key, [dictionary objectForKey:key]];
+        completeString = [NSString stringWithFormat:@"%@%@,%@\n", completeString, key, [dictionary objectForKey:key]];
     }
     
     [deviceDetails setStringValue:completeString];

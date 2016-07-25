@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		003D07D319778323003EA85B /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003D07D219778323003EA85B /* MobileDevice.framework */; };
 		003D07D4197789B7003EA85B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008F46CC1977789A0071473A /* MainMenu.xib */; };
-		003D07D6197789C7003EA85B /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 008F46EF197779270071473A /* Sparkle.framework */; };
+		003D07D6197789C7003EA85B /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 008F46EF197779270071473A /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		008F46B81977789A0071473A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008F46B71977789A0071473A /* Cocoa.framework */; };
 		008F46C21977789A0071473A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 008F46C01977789A0071473A /* InfoPlist.strings */; };
 		008F46C41977789A0071473A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008F46C31977789A0071473A /* main.m */; };
@@ -17,6 +17,7 @@
 		008F46CB1977789A0071473A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008F46CA1977789A0071473A /* AppDelegate.m */; };
 		008F46F0197779270071473A /* irecovery in Resources */ = {isa = PBXBuildFile; fileRef = 008F46EE197779270071473A /* irecovery */; };
 		008F46F1197779270071473A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008F46EF197779270071473A /* Sparkle.framework */; };
+		00C5AEA51D46BC74002FA879 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C5AEA41D46BC74002FA879 /* Images.xcassets */; };
 		00ED2F9D197818EA0045C78F /* Iconx512.icns in Resources */ = {isa = PBXBuildFile; fileRef = 00ED2F9C197818EA0045C78F /* Iconx512.icns */; };
 /* End PBXBuildFile section */
 
@@ -48,13 +49,13 @@
 		008F46C91977789A0071473A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		008F46CA1977789A0071473A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		008F46CD1977789A0071473A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		008F46D61977789A0071473A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		008F46DD1977789A0071473A /* Get WiFi AddressesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Get WiFi AddressesTests-Info.plist"; sourceTree = "<group>"; };
 		008F46DF1977789A0071473A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		008F46E11977789A0071473A /* Get_WiFi_AddressesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Get_WiFi_AddressesTests.m; sourceTree = "<group>"; };
 		008F46EB197778D70071473A /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
 		008F46EE197779270071473A /* irecovery */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = irecovery; sourceTree = "<group>"; };
 		008F46EF197779270071473A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		00C5AEA41D46BC74002FA879 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		00ED2F9C197818EA0045C78F /* Iconx512.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Iconx512.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +100,6 @@
 				008F46EF197779270071473A /* Sparkle.framework */,
 				008F46EB197778D70071473A /* MobileDevice.h */,
 				008F46B71977789A0071473A /* Cocoa.framework */,
-				008F46D61977789A0071473A /* XCTest.framework */,
 				008F46B91977789A0071473A /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -121,6 +121,7 @@
 				008F46C91977789A0071473A /* AppDelegate.h */,
 				008F46CA1977789A0071473A /* AppDelegate.m */,
 				008F46CC1977789A0071473A /* MainMenu.xib */,
+				00C5AEA41D46BC74002FA879 /* Images.xcassets */,
 				008F46BE1977789A0071473A /* Supporting Files */,
 			);
 			path = "Get WiFi Addresses";
@@ -191,8 +192,13 @@
 		008F46AC1977789A0071473A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = brandonusher;
+				TargetAttributes = {
+					008F46B31977789A0071473A = {
+						DevelopmentTeam = 968U22P9B5;
+					};
+				};
 			};
 			buildConfigurationList = 008F46AF1977789A0071473A /* Build configuration list for PBXProject "Get WiFi Addresses" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -220,6 +226,7 @@
 				003D07D4197789B7003EA85B /* MainMenu.xib in Resources */,
 				008F46C21977789A0071473A /* InfoPlist.strings in Resources */,
 				00ED2F9D197818EA0045C78F /* Iconx512.icns in Resources */,
+				00C5AEA51D46BC74002FA879 /* Images.xcassets in Resources */,
 				008F46C81977789A0071473A /* Credits.rtf in Resources */,
 				008F46F0197779270071473A /* irecovery in Resources */,
 			);
@@ -292,6 +299,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -349,6 +357,7 @@
 		008F46E61977789A0071473A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -357,7 +366,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Get WiFi Addresses/Get WiFi Addresses-Prefix.pch";
 				INFOPLIST_FILE = "Get WiFi Addresses/Get WiFi Addresses-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonusher.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -366,6 +376,7 @@
 		008F46E71977789A0071473A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,7 +385,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Get WiFi Addresses/Get WiFi Addresses-Prefix.pch";
 				INFOPLIST_FILE = "Get WiFi Addresses/Get WiFi Addresses-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonusher.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
