@@ -97,7 +97,6 @@ void recovery_disconnect_callback(struct am_recovery_device *rdev) {
             [allDetails writeToFile:fileName atomically:NO encoding:NSStringEncodingConversionAllowLossy error:nil];
         }
     }];
-    allDetails = @"";
 }
 
 @end
