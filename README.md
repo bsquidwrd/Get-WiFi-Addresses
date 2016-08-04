@@ -6,5 +6,5 @@ Download the latest version here: [https://github.com/brandonusher/Get-WiFi-Addr
 Simply open the application and start plugging in devices to get their Serial Numbers and WiFi Addresses
 
 <p align="center">
-<img src="http://i.imgur.com/VYBKzj1.png" />
+<img src="http://i.imgur.com/Ev3ibUz.png" />
 </p>
