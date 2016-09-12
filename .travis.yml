@@ -1,8 +1,17 @@
 language: objective-c
 osx_image: xcode7.2
-xcode_project: Get WiFi Addresses.xcodeproj # path to your xcodeproj folder
+xcode_project: Get WiFi Addresses.xcodeproj
 xcode_scheme: Get WiFi Addresses
 notifications:
   email:
     on_success: change
     on_failure: always
+before_deploy: "ls -la"
+deploy:
+  provider: releases
+  api_key:
+    secure: jT1dPZSV36GYdo2RJ5UaBzW9ehVDWd/MDfcgrP1pSy4rKFmFzSJ+LuvMY9pgUfQ9aun0DlDFjsMRvzcnDRwy6t5o7wMFGOmYE5Zg/EngSFtQ3YgwAlcx/yTgS6NDagEZSVstz4I3C+0AcwgJtBoXcMiSljK7OP1p9pEmhsAOquw8hwiiKfKeK40Y8hBFJBUCUlcMYoMb33buAuR47Xo2dgjbl5HceZs2PveDilezYh2gHsdO0KW/Cnmr/HHvbIsHTAKUMcJ7jo5blpx5Ygt6LZEEinrbxOxlRGMbXRESsH9749UREbCb6MHnjKNQs+pQ7qWhl4ICeVw29acR4FXPqW/QRbL6FHpKLUwx3UyACkhbr7rjRWPg7mmQ+RuEqHYChI2d82ANidp/VDVqItE38CNpXLuot5lYMjHOhJj3HWKGK5JSe2A+/Tj5cBwOVcNOCFejnHEeki9/4cFPRPmQETQfmU1xXyMTAczxmXgl+6PiluaMmO9p63atRGnS6J5EueO2q2m6uPNSUNOKf7MtaxhBw7YSpB4chSqa9ngxPQDXyh6w5qt3uEc59BKwCAdufxZjuyOGEb8YRc/WrhAUqyCZoFPqt3kbQrL9eceBi+oaECaqjc0l+F5BmuWHjhPx/D9YZ0tVyZr4G3NFpXNGkJG1msNpm9nFUbfGZmDdLAY=
+  file: "Get.WiFi.Addresses.zip"
+  skip_cleanup: true
+  on:
+    tags: true
