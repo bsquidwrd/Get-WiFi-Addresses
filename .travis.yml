@@ -2,3 +2,7 @@ language: objective-c
 osx_image: xcode7.2
 xcode_project: Get WiFi Addresses.xcodeproj # path to your xcodeproj folder
 xcode_scheme: Get WiFi Addresses
+notifications:
+  email:
+    on_success: change
+    on_failure: always
