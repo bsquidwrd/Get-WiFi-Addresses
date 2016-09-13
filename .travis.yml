@@ -6,7 +6,10 @@ notifications:
   email:
     on_success: change
     on_failure: always
-after_success: "ls -la"
+after_success:
+    - brew update
+    - brew install tree
+    - tree
 deploy:
   provider: releases
   api_key:
