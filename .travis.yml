@@ -6,7 +6,7 @@ notifications:
   email:
     on_success: change
     on_failure: always
-before_deploy: "ls -la"
+after_success: "ls -la"
 deploy:
   provider: releases
   api_key:
