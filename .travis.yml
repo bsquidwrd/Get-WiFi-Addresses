@@ -9,7 +9,12 @@ notifications:
 after_success:
     - brew update
     - brew install tree
+    - cp -R Library/Developer/Xcode/DerivedData/*/Build/Products/Debug/Get\ WiFi\ Addresses.app .
+    - zip -r -X Get.WiFi.Addresses.zip Get\ WiFi\ Addresses.app
     - tree
+before_deploy:
+    - cp -R Library/Developer/Xcode/DerivedData/*/Build/Products/Debug/Get\ WiFi\ Addresses.app .
+    - zip -r -X Get.WiFi.Addresses.zip Get\ WiFi\ Addresses.app
 deploy:
   provider: releases
   api_key:
